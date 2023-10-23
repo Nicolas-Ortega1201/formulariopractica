@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+
+<html lang="es"> <!-- Inicio de la etiqueta HTML con especificación de idioma en inglés -->
+
+<head> <!-- Comienzo del encabezado del documento HTML -->
+  <meta charset="UTF-8"> <!-- Especificación de la codificación de caracteres UTF-8 -->
+  <title>Registration Form</title> <!-- Título de la página -->
+  <link rel="stylesheet" href="styles.css" /> <!-- Vinculación de la hoja de estilos externa "styles.css" -->
+</head> <!-- Fin del encabezado del documento HTML -->
+
+<body> <!-- Comienzo del cuerpo del documento HTML -->
+  <h1>Registration Form</h1> <!-- Encabezado de nivel 1 para el título del formulario de registro -->
+  <p>Please fill out this form with the required information</p> <!-- Párrafo con una breve explicación del formulario -->
+
+  <form method="post" action='https://register-demo.freecodecamp.org'> <!-- Inicio del formulario con el método POST y URL de acción -->
+    <fieldset> <!-- Comienzo de un grupo de campos relacionados -->
+      <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label> <!-- Etiqueta y campo de entrada para el primer nombre -->
+      <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label> <!-- Etiqueta y campo de entrada para el apellido -->
+      <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label> <!-- Etiqueta y campo de entrada para el correo electrónico -->
+      <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label> <!-- Etiqueta y campo de entrada para la contraseña con un patrón de validación -->
+    </fieldset> <!-- Fin del grupo de campos -->
+
+    <fieldset> <!-- Comienzo de otro grupo de campos -->
+      <legend>Account type (required)</legend> <!-- Leyenda para el grupo de opciones -->
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label> <!-- Etiqueta y botón de opción para el tipo de cuenta personal -->
+      <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label> <!-- Etiqueta y botón de opción para el tipo de cuenta empresarial -->
+    </fieldset> <!-- Fin del grupo de opciones -->
+
+    <fieldset> <!-- Comienzo de otro grupo de campos -->
+      <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label> <!-- Etiqueta y campo de entrada de tipo archivo para subir una imagen de perfil -->
+      <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label> <!-- Etiqueta y campo de entrada de tipo número para la edad con restricciones de rango -->
+      <label for="referrer">How did you hear about us? <!-- Etiqueta para la selección de cómo se enteró el usuario -->
+        <select id="referrer" name="referrer"> <!-- Menú desplegable para seleccionar la fuente de referencia -->
+          <option value="">(select one)</option> <!-- Opción por defecto -->
+          <option value="1">freeCodeCamp News</option> <!-- Opción para la fuente "freeCodeCamp News" -->
+          <option value="2">freeCodeCamp YouTube Channel</option> <!-- Opción para la fuente "freeCodeCamp YouTube Channel" -->
+          <option value="3">freeCodeCamp Forum</option> <!-- Opción para la fuente "freeCodeCamp Forum" -->
+          <option value="4">Other</option> <!-- Opción para otra fuente -->
+        </select>
+      </label>
+      <label for="bio">Provide a bio: <!-- Etiqueta para el área de texto para la biografía -->
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea> <!-- Área de texto con filas, columnas y marcador de posición -->
+      </label>
+    </fieldset> <!-- Fin del grupo de campos -->
+
+    <label for="terms-and-conditions"> <!-- Etiqueta para los términos y condiciones -->
+      <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a> <!-- Campo de verificación y enlace a los términos y condiciones -->
+    </label>
+    <input type="submit" value="Submit" /> <!-- Botón de envío del formulario -->
+  </form> <!-- Fin del formulario -->
+
+</body> <!-- Fin del cuerpo del documento HTML -->
+</html> <!-- Fin de la etiqueta HTML -->

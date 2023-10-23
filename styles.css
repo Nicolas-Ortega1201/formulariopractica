@@ -1,0 +1,123 @@
+/* Estilo para el cuerpo de la página */
+body {
+    width: 100%;
+    /* El cuerpo ocupa todo el ancho disponible */
+    height: 100vh;
+    /* Altura igual a la altura de la ventana (viewport height) */
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    background-color: #1b1b32;
+    /* Fondo de color oscuro */
+    color: #f5f6f7;
+    /* Texto en color claro */
+    font-family: Tahoma;
+    /* Tipo de fuente */
+    font-size: 16px;
+    /* Tamaño de fuente */
+}
+
+/* Estilo para encabezados de nivel 1 (h1) y párrafos (p) */
+h1,
+p {
+    margin: 1em auto;
+    /* Margen superior e inferior */
+    text-align: center;
+    /* Alineación centrada del texto */
+}
+
+/* Estilo para formularios */
+form {
+    width: 60vw;
+    /* Ancho del formulario relativo al 60% del ancho de la ventana */
+    max-width: 500px;
+    /* Ancho máximo del formulario */
+    min-width: 300px;
+    /* Ancho mínimo del formulario */
+    margin: 0 auto;
+    /* Centrar horizontalmente el formulario en el centro de la página */
+    padding-bottom: 2em;
+    /* Espacio en la parte inferior del formulario */
+}
+
+/* Estilo para grupos de campos (fieldset) */
+fieldset {
+    border: none;
+    /* Sin borde alrededor del grupo */
+    padding: 2rem 0;
+    /* Relleno en la parte superior e inferior del grupo */
+    border-bottom: 3px solid #3b3b4f;
+    /* Línea inferior con borde de color */
+}
+
+/* Estilo para el último grupo de campos (fieldset) */
+fieldset:last-of-type {
+    border-bottom: none;
+    /* Elimina la línea inferior del último grupo de campos */
+}
+
+/* Estilo para etiquetas (label) */
+label {
+    display: block;
+    /* Hace que las etiquetas sean elementos de bloque */
+    margin: 0.5rem 0;
+    /* Espacio entre etiquetas */
+}
+
+/* Estilo para campos de entrada, áreas de texto y selectores */
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    /* Espacio entre campos de entrada, áreas de texto y selectores */
+    width: 100%;
+    /* Ancho completo */
+    min-height: 2em;
+    /* Altura mínima */
+}
+
+/* Estilo para campos de entrada y áreas de texto */
+input,
+textarea {
+    background-color: #0a0a23;
+    /* Fondo de color oscuro */
+    border: 1px solid #0a0a23;
+    /* Borde de color oscuro */
+    color: #ffffff;
+    /* Texto en color claro */
+}
+
+/* Estilo para elementos con la clase "inline" */
+.inline {
+    width: unset;
+    /* Ancho sin restricciones */
+    margin: 0 0.5em 0 0;
+    /* Espacio entre elementos en línea */
+    vertical-align: middle;
+    /* Alineación vertical al centro */
+}
+
+/* Estilo para el botón de envío del formulario */
+input[type="submit"] {
+    display: block;
+    /* Hace que el botón sea un elemento de bloque */
+    width: 60%;
+    /* Ancho del 60% del contenedor */
+    margin: 1em auto;
+    /* Margen superior e inferior y centrado horizontal */
+    height: 2em;
+    /* Altura del botón */
+    font-size: 1.1rem;
+    /* Tamaño de fuente */
+    background-color: #3b3b4f;
+    /* Fondo de color oscuro */
+    border-color: white;
+    /* Borde de color blanco */
+    min-width: 300px;
+    /* Ancho mínimo */
+}
+
+/* Estilo para campos de entrada de tipo archivo (input[type="file"]) */
+input[type="file"] {
+    padding: 1px 2px;
+    /* Añade un pequeño relleno al campo de entrada de tipo archivo */
+}
