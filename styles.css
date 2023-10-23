@@ -121,3 +121,16 @@ input[type="file"] {
     padding: 1px 2px;
     /* Añade un pequeño relleno al campo de entrada de tipo archivo */
 }
+
+
+.terminos-condiciones {
+    display: flex;
+    align-items: center;
+    margin: 0 18% 0 18%;
+
+}
+
+#terms-and-conditions {
+    width: 10%;
+    order: 2;
+}
